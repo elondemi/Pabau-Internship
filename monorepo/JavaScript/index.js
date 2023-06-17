@@ -22,3 +22,15 @@ function changeValues() {
         }
     });
 }
+
+function showSelectedValues() {
+    var checkboxes = Array.from(document.getElementsByName("interest"));
+    var selectedValues = checkboxes
+        .filter(function(checkbox) {
+            return checkbox.checked;
+        })
+        .map(function(checkbox) {
+            return checkbox.value;
+        });
+    alert("Selected Values: " + selectedValues.join(", "));
+}
