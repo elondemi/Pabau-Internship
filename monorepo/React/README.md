@@ -11,3 +11,11 @@ Installation:
     npm install
 
     npm run dev
+
+
+
+Start the project:
+
+    npm install
+
+    npm run dev
